@@ -1,48 +1,63 @@
+# 📊 Superstore Data Analysis
 
-# 🛒 Superstore Sales Data Analysis
-A complete data analysis project using **Python, Pandas, NumPy, Matplotlib, and Seaborn** to explore sales performance, profit trends, customer behavior, and shipping analysis.
-
----
-
-## 📌 Project Overview
-The Superstore dataset contains information about orders, customers, sales, region-wise performance, and shipping.  
-This project focuses on **data cleaning, EDA (Exploratory Data Analysis), and generating actionable insights** that can help understand business performance.
+## 📌 Overview
+This project performs Exploratory Data Analysis (EDA) on the Superstore dataset to understand sales performance, profit distribution, customer behavior, and regional trends. The goal is to identify key business insights that can improve decision-making.
 
 ---
 
-## 🎯 Objectives of the Project
-- Identify **top performing categories & sub-categories**
-- Find **most profitable and least profitable regions**
-- Analyze **sales vs profit relationship**
-- Study **shipping delays**
-- Understand **customer buying patterns**
-- Detect performance trends across **segments and regions**
+## 🧰 Tools & Technologies
+- Python  
+- Pandas  
+- NumPy  
+- Matplotlib  
+- Seaborn  
+- Jupyter Notebook  
 
 ---
 
-## 📊 Dataset Description
-**Rows:** ~10k (approx)  
-**Columns:** Customer info, Orders, Sales, Profit, Region, Category, Sub-Category, Ship Mode, Dates, etc.
-
-Important Columns:
-- Order Date  
-- Ship Date  
-- Order ID  
-- Customer Name  
-- Segment  
-- City / State / Region  
-- Category / Sub-Category  
-- Sales  
-- Profit  
-- Quantity  
-- Discount  
-- Ship Mode  
+## 🔄 Data Processing
+- Converted date columns into datetime format  
+- Cleaned missing or incorrect data  
+- Calculated Shipping Delay  
+- Extracted additional features such as Month and Year  
 
 ---
 
-## 🧼 Data Cleaning Steps
-- Handled missing values  
-- Converted `Order Date` & `Ship Date` to datetime  
-- Created new column:  
-  ```python
-  df['Shipping Delay'] = (df['Ship Date'] - df['Order Date']).dt.days
+## 📊 Analysis Included
+- Sales and Profit Analysis  
+- Category and Sub-category Performance  
+- Region-wise Insights  
+- Customer-level Analysis  
+- Shipping Delay Analysis  
+
+---
+
+## 📈 Visualizations
+- Sales Trend Line Chart  
+- Profit by Category Bar Chart  
+- Region-wise Performance Charts  
+- Shipping Delay Distribution  
+- Correlation Heatmap  
+
+---
+
+## 🏁 Key Insights
+- Technology is the most profitable category  
+- Some sub-categories show high sales but low profits  
+- The West region performs the best overall  
+- Discounts negatively affect profitability  
+- Shipping delays do not always impact sales directly  
+
+---
+
+## ▶ How to Run
+1. Clone the repository  
+2. Install required Python libraries  
+3. Open the Jupyter Notebook  
+4. Run all cells to view the analysis and visualizations  
+
+---
+
+## 📬 Contact  
+📧 Email: **rs0678215@gmail.com**  
+🔗 LinkedIn: [Robin Sharma](https://www.linkedin.com/in/robin-sharma-384153276)
